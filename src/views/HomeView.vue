@@ -1,6 +1,39 @@
 <template>
+<v-app id="app">
+
+  <v-container>
+  
+    <v-text-field
+      label="Upisi ime osobe"
+      color="primary"
+      v-model="input"
+      @keypress.enter="show">
+  
+       <template v-slot:append>
+  
+          <v-btn
+            depressed 
+            tile
+            color="primary"
+            class="ma-0"
+            @click="show">
+          
+            show
+            
+          </v-btn>
+        
+      </template>
+        
+    </v-text-field>
+      
+  </v-container>
+  
+</v-app>
+
 
 </template>
+
+
 
 <script>
 
@@ -39,7 +72,7 @@
 
   this.comitovi = gotov1;
   this.comitovi = gotov2;
-   this.comitovi = gotov3;
+  this.comitovi = gotov3;
 
 
 
